@@ -73,7 +73,7 @@ class Health_Check_Screenshots {
 	}
 
 	public function display_screenshot() {
-		if ( ! isset( $_GET['health-check-screenshot'] ) ) {
+		if ( empty( $_GET['health-check-screenshot'] ) ) {
 			return;
 		}
 
