@@ -69,13 +69,3 @@ To report a security issue, please visit the [WordPress HackerOne](https://hacke
 * Tools: Added beta feature toggle for those who wish to test new functionality that may not be fully ready yet.
 * CLI: Fixed the CLI commands, you can now `wp health-check status` to your hearts content!
 * Beta feature: Added a new beta feature, making it easier for non-technical users to grab screenshots of issues on their site, and share them.
-
-= v1.6.0 (2023-03-31) =
-* Improved the visual aspects of the Troubleshooting Mode Widget.
-* Improved security by hardening Troubleshooting Mode actions with security tokens (nonces).
-* Added a new tool to check `.htaccess` rules (where applicable).
-* Added TwentyTwenty Three to the list of default themes.
-* Added option to install the latest classic (non Site Editor-focused) default theme if no default theme exists.
-* Added a new security confirmation prompt in Troubleshooting Mode, if a security token (nonce) value is either expired, or missing.
-* Added better documentation around reporting security concerns.
-* Fixed a bug where notices from previous Troubleshooting sessions would show up in a new session, which is just confusing.
