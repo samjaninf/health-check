@@ -10,7 +10,7 @@
  * Description: Checks the health of your WordPress install.
  * Author: The WordPress.org community
  * Author URI: https://wordpress.org/plugins/health-check/
- * Version: 1.7.0
+ * Version: 1.7.1
  * Requires PHP: 5.6
  * License: GPLv2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
