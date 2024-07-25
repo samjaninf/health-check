@@ -60,7 +60,10 @@ class Health_Check_Screenshots {
 		}
 
 		// Validate nonces.
-		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( $_GET['_wpnonce'], 'health-check-delete-screenshot' ) ) {
+		if ( ! isset( $_GET['_wpnonce'] ) ) {
+			return;
+		}
+		if ( ! wp_verify_nonce( $_GET['_wpnonce'], 'health-check-delete-screenshot-' . absint( $_GET['health-check-delete-screenshot'] ) ) ) {
 			return;
 		}
 
