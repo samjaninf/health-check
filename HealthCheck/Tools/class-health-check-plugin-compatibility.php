@@ -140,7 +140,7 @@ class Health_Check_Plugin_Compatibility extends Health_Check_Tool {
 
 			$json = json_decode( $tide_response );
 
-			if ( empty( $json ) ) {
+			if ( empty( $json ) || ! isset( $json->reports->phpcs_phpcompatibilitywp->report->compatible ) ) {
 				$tide_versions = array();
 			} else {
 				$tide_versions = $json->reports->phpcs_phpcompatibilitywp->report->compatible;
