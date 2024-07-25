@@ -57,11 +57,12 @@ To report a security issue, please visit the [WordPress HackerOne](https://hacke
 == Changelog ==
 
 = 1.7.1 (2024-07-25) =
-* Security: Verify that screenshot hashes are not empty before attempting to look them up and display them.
+* Security: Prevent a potential information disclosure from the screenshot beta feature, reported independently by Jarko Piironen.
 * Security hardening: Make each screenshot delete nonce unique to that image.
 * Security hardening: Add a capability check alongside the nonce validation when toggling beta features on or off.
 * General: Updated the `Tested up to` tag.
 * General: Added notice about future changes to the Troubleshooting and Tools sections.
+* Added Twenty Twenty Four as a known and valid default theme.
 * Tools: Fixed a PHP warning when checking for PHP version compatibility and no data was found.
 * Tools: Fixed a PHP warning when `WP_DEBUG` is disabled, or nothing has been written to the logfile yet.
 * Tools: Improved the description for the `robots.txt` file viewer.
