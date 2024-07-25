@@ -56,6 +56,16 @@ To report a security issue, please visit the [WordPress HackerOne](https://hacke
 
 == Changelog ==
 
+= 1.7.1 (2024-07-25) =
+* Security: Verify that screenshot hashes are not empty before attempting to look them up and display them.
+* Security hardening: Make each screenshot delete nonce unique to that image.
+* Security hardening: Add a capability check alongside the nonce validation when toggling beta features on or off.
+* General: Updated the `Tested up to` tag.
+* General: Added notice about future changes to the Troubleshooting and Tools sections.
+* Tools: Fixed a PHP warning when checking for PHP version compatibility and no data was found.
+* Tools: Fixed a PHP warning when `WP_DEBUG` is disabled, or nothing has been written to the logfile yet.
+* Tools: Improved the description for the `robots.txt` file viewer.
+
 = 1.7.0 (2023-08-06) =
 * General: Improved styling inconsistency between the plugin and WordPress core.
 * General: Fixed an issue with plugin translations where language strings would get mixed when using third party language plugins, or a separate profile language.
